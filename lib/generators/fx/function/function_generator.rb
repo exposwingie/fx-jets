@@ -82,7 +82,7 @@ module Fx
       private
 
       def function_definition_path
-        @_function_definition_path ||= Rails.root.join(*%w(db functions))
+        @_function_definition_path ||= Jets.root.join(*%w(db functions))
       end
 
       def version_regex

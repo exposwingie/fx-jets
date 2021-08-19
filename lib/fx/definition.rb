@@ -16,7 +16,7 @@ module Fx
     end
 
     def full_path
-      Rails.root.join(path)
+      Jets.root.join(path)
     end
 
     def path
@@ -40,7 +40,7 @@ module Fx
     end
 
     def migration_paths
-      Rails.application.config.paths["db/migrate"].expanded
+      Jets.application.config.paths["db/migrate"].expanded
     end
   end
 end

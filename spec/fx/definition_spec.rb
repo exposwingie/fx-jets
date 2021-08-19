@@ -39,10 +39,10 @@ describe Fx::Definition do
             END;
             $$ LANGUAGE plpgsql;
           EOS
-          engine_path = Rails.root.join("tmp", "engine")
+          engine_path = Jets.root.join("tmp", "engine")
           FileUtils.mkdir_p(engine_path.join("db", "functions"))
           File.write(engine_path.join("db", "functions", "custom_test_v01.sql"), sql_definition)
-          Rails.application.config.paths["db/migrate"].push(engine_path.join("db", "migrate"))
+          Jets.application.config.paths["db/migrate"].push(engine_path.join("db", "migrate"))
 
           definition = Fx::Definition.new(name: "custom_test", version: 1)
 
@@ -114,7 +114,7 @@ describe Fx::Definition do
     it "joins the path with Rails.root" do
       definition = Fx::Definition.new(name: "test", version: 15)
 
-      expect(definition.full_path).to eq Rails.root.join(definition.path)
+      expect(definition.full_path).to eq Jets.root.join(definition.path)
     end
   end
 

@@ -112,7 +112,7 @@ module Fx
       end
 
       def trigger_definition_path
-        @_trigger_definition_path ||= Rails.root.join(*["db", "triggers"])
+        @_trigger_definition_path ||= Jets.root.join(*["db", "triggers"])
       end
 
       # Skip creating migration file if:

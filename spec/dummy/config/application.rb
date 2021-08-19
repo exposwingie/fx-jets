@@ -3,7 +3,7 @@ require File.expand_path("../boot", __FILE__)
 # Pick the frameworks you want:
 require "active_record/railtie"
 
-Bundler.require(*Rails.groups)
+Bundler.require(*Jets.groups)
 require "fx"
 
 module Dummy

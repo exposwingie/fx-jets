@@ -40,7 +40,7 @@ module Fx
     end
 
     def migration_paths
-      Jets.application.config.paths["db/migrate"].expanded
+      [Jets.root.join('db', 'migrate').to_s]
     end
   end
 end

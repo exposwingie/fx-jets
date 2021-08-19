@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = "fx-jets"
   spec.version       = Fx::VERSION
   spec.authors       = ["Ivan Snisarenko"]
-  spec.email         = ["teo@teoljungberg.com"]
+  spec.email         = ["ivan"]
   spec.summary       = %q{Support for database functions and triggers in Rails migrations}
   spec.description   = <<-DESCRIPTION
     Adds methods to ActiveRecord::Migration to create and manage database functions

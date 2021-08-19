@@ -4,9 +4,9 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "fx/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "fx"
+  spec.name          = "fx-jets"
   spec.version       = Fx::VERSION
-  spec.authors       = ["Teo Ljungberg"]
+  spec.authors       = ["Ivan Snisarenko"]
   spec.email         = ["teo@teoljungberg.com"]
   spec.summary       = %q{Support for database functions and triggers in Rails migrations}
   spec.description   = <<-DESCRIPTION
